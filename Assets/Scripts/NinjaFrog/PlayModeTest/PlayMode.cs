@@ -37,6 +37,14 @@ public class NinjaFrogMovementTest
         Assert.That(NinjaFrog.GetComponent<NinjaFrogMovement>().stats.coins == 1);
     }
 
+    [UnityTest]
+    public IEnumerator CoinDisappears()
+    {
+        Coin = GameObject.Find("Coin");
+        yield return new WaitForSeconds(2);
+        Assert.That(Coin == null);
+    }
+
 
     [TearDown]
     public void TearDown()
