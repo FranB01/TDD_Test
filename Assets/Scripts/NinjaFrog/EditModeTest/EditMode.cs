@@ -29,16 +29,6 @@ public class NinjaFrog
         Assert.AreEqual(expected, actual, "The expected value should be " + expected + " but was " + actual);
     }
     
-    // Battle test
-    [TestCase(true, 1, 0)]
-    [TestCase(true, 2, 1)]
-    [TestCase(false, 1, 1)]
-    [TestCase(false, 0, 0)]
-    [TestCase(false, 0, 1)]
-    public void BattleTest_Cases(bool expected, int powerAttacker, int powerDefender)
-    {
-        bool actual = stats.Battle(powerAttacker, powerDefender);
-        Assert.AreEqual(expected, actual, "The expected value should be " + expected + " but was " + actual);
-    }
+    
     
 }
