@@ -18,4 +18,9 @@ public class NinjaFrogStats
         }
         return false;
     }
+    
+    public bool Battle(int attackPower, int enemyPower)
+    {
+        return attackPower >= enemyPower;
+    }
 }
