@@ -40,5 +40,14 @@ public class NinjaFrog
         bool actual = stats.Battle(powerAttacker, powerDefender);
         Assert.AreEqual(expected, actual, "The expected value should be " + expected + " but was " + actual);
     }
+
+    [TestCase(true, 1)]
+    [TestCase(true, 2)]
+    [TestCase(false, 0)]
+    public void IsAlive_Cases(bool expected, int attackPower)
+    {
+        bool actual = stats.isAlive(attackPower);
+        Assert.AreEqual(expected, actual, "The expected value should be " + expected + " but was " + actual);
+    }
     
 }
