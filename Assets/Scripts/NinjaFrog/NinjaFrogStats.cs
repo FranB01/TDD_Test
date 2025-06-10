@@ -6,7 +6,8 @@ public class NinjaFrogStats
     public int maxLives = 3;          
     public float speed = 5f;        
     public float jumpForce = 10f;    
-    public int attackPower = 1;     
+    public int attackPower = 1;
+    public int coins;
 
     public int attackRange = 1;       
 
