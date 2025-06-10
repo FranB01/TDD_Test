@@ -6,7 +6,7 @@ namespace NinjaFrog
     {
         private Rigidbody2D rb;
         private bool isGrounded = false;
-        private NinjaFrogStats stats = new();
+        public NinjaFrogStats stats = new();
 
         void Start()
         {
@@ -19,7 +19,11 @@ namespace NinjaFrog
             {
                 isGrounded = true;
             }
-            else if (collision.gameObject.CompareTag("Coin"))
+        }
+
+        void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag("Coin"))
             {
                 stats.coins += 1;
                 Destroy(collision.gameObject);
