@@ -23,4 +23,9 @@ public class NinjaFrogStats
     {
         return attackPower >= enemyPower;
     }
+
+    public bool isAlive(int attackPower)
+    {
+        return attackPower > 0;
+    }
 }
