@@ -6,12 +6,11 @@ namespace NinjaFrog
     {
         private Rigidbody2D rb;
         private bool isGrounded = false;
-        private NinjaFrogStats stats;
+        private NinjaFrogStats stats = new();
 
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
-            stats = GetComponent<NinjaFrogStats>();
         }
 
         void OnCollisionEnter2D(Collision2D collision)

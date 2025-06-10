@@ -7,7 +7,7 @@ public class NinjaFrogStats
     public float speed = 5f;        
     public float jumpForce = 10f;    
     public int attackPower = 1;
-    public int coins;
+    public int coins = 0;
 
     public int attackRange = 1;       
 
